@@ -5,7 +5,8 @@ import data from './data/init'
 
 import Header from "./common/header/Header";
 import Footer from "./common/footer/Footer";
-import Http404 from "./page/http404/Http404";
+import Navbar from "./common/navbar/Navbar";
+import Http404 from "./common/http404/Http404";
 
 const App = () => {
     const [site] = useState(data.site)
@@ -13,8 +14,9 @@ const App = () => {
 
     return (
         <div className="App">
-            <Header site={site} />
             <Router>
+                <Header site={site} />
+                <Navbar links={pages.map(page => {return {path: page.path, title: page.title}})} />
                 <Switch>
                     {pages.map(page => 
                         <Route exact 
@@ -24,8 +26,8 @@ const App = () => {
                     )}
                     <Route render={() => <Http404 />} />
                 </Switch>
+                <Footer site={site} />
             </Router>
-            <Footer site={site} />
         </div >
     );
 }
