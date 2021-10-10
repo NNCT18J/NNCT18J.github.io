@@ -4,13 +4,13 @@ import Links from '../page/links/Links';
 
 const pagesData = [
     {
-        title: 'home',
+        title: 'Home',
         path: '/',
         Component: Home,
         data: {}
     },
     {
-        title: 'works',
+        title: 'Works',
         path: '/works',
         Component: Works,
         data: [
@@ -22,7 +22,7 @@ const pagesData = [
         ]
     },
     {
-        title: 'links',
+        title: 'Links',
         path: '/links',
         Component: Links,
         data: [

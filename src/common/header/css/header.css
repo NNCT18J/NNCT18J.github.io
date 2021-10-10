@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+header {
+  height: 75px;
+  display: grid;
+  background-color: #29363d;
+  grid-template-columns: [title_] auto 1fr [nav_] auto;
+  color: #eee; }
+  header .title {
+    grid-column: title_;
+    line-height: 75px;
+    padding-left: 75px;
+    font-size: 30px;
+    font-style: italic;
+    text-shadow: 2px 2px #888;
+    letter-spacing: 5px; }
+  header nav {
+    grid-column: nav_; }
+    header nav > * {
+      line-height: 75px; }
+
+/*# sourceMappingURL=header.css.map */

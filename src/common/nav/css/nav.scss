@@ -1,0 +1,43 @@
+@import '../../header/css/header.scss';
+
+$nav-height: 25px;
+$nav-margin-row: ($header-height - $nav-height) / 2;
+
+nav {
+    // display: grid;
+    display: flex;
+    // grid-auto-rows: 5em;
+    justify-content: center;
+    height: $nav-height;
+    margin: $nav-margin-row 80px $nav-margin-row;
+
+    .item {
+        text-align: center;
+        line-height: $nav-height;
+        text-decoration: none;
+        color: $header-color;
+        + .item {
+            margin-left: 40px;
+        }
+
+        &:hover {
+            text-shadow: none;
+            color: $header-color;
+        }
+
+        // 下線のアニメーション
+        &::after {
+            bottom: 0;
+            border-bottom: solid 1px #ddd;
+            content: "";
+            display: block;
+            transition: all 0.3s ease;
+            -webkit-transition: all 0.3s ease;
+            width: 0;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+}

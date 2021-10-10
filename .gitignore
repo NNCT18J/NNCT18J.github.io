@@ -25,3 +25,7 @@ yarn-error.log*
 # lock
 package-lock.json
 yarn.lock
+
+# css
+/**/.sass-cache/
+/**/*.css.map

@@ -1,7 +1,22 @@
 const Home = () => {
     return (
         <div>
-            HOME
+            <div>HOME</div>
+            <div>HOME</div>
+            <div>HOME</div>
+            <div>HOME</div>
+            <div>HOME</div>
+            <div>HOME</div>
+            <div>HOME</div>
+            <div>HOME</div>
+            <div>HOME</div>
+            <div>HOME</div>
+            <div>HOME</div>
+            <div>HOME</div>
+            <div>HOME</div>
+            <div>HOME</div>
+            <div>HOME</div>
+            <div>HOME</div>
         </div>
     );
 }

@@ -1,0 +1,17 @@
+* {
+  margin: 0; }
+
+.app {
+  min-height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: [header_] auto [page_] 1fr [footer_] auto; }
+  .app header {
+    grid-row: header_; }
+  .app main {
+    grid-row: page_;
+    background-color: #ddd; }
+  .app footer {
+    grid-row: footer_; }
+
+/*# sourceMappingURL=app.css.map */
