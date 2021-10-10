@@ -47,7 +47,11 @@ const pagesData = [
             },
             {
                 title: 'Twitter',
-                uri: 'https://github.com/nnct18j'
+                uri: 'https://twitter.com/NNCT18J'
+            },
+            {
+                title: '長野高専',
+                uri: 'https://www.nagano-nct.ac.jp/'
             }
         ]
     }

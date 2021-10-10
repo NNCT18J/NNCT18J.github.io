@@ -1,7 +1,10 @@
+import './css/home.css'
+
 const Home = () => {
     return (
-        <div>
-        </div>
+        <div className="home">
+            HOME
+        </div >
     );
 }
 

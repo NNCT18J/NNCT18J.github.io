@@ -5,7 +5,7 @@ import data from './data/init'
 
 import Header from "./common/header/Header";
 import Footer from "./common/footer/Footer";
-import Http404 from "./common/http404/Http404";
+import NotFound from "./common/notFound/NotFound";
 
 import "./css/app.css";
 
@@ -30,7 +30,7 @@ const App = () => {
                                 }>
                             </Route>
                         )}
-                        <Route render={() => <Http404 />} />
+                        <Route render={() => <NotFound />} />
                     </Switch>
                 </main>
                 <Footer site={site} />
