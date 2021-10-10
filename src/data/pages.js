@@ -29,6 +29,10 @@ const pagesData = [
             {
                 title: 'GitHub',
                 uri: 'https://github.com/nnct18j'
+            },
+            {
+                title: 'Twitter',
+                uri: 'https://github.com/nnct18j'
             }
         ]
     }

@@ -1,10 +1,18 @@
+import PageTitle from '../../components/pageTitle/PageTitle'
+import './css/links.css'
+
 const Links = (props) => {
     return (
-        <div>
-            {props.data.map(link => 
-                <a href={link['uri']} className="link">{link['title']}</a>
-            )}
-        </div>
+        <>
+            <PageTitle title={props.title} />
+            <div className="links">
+                {props.data.map(link => 
+                    <div className="link">
+                        <a href={link['uri']} target="_blank">{link['title']}</a>
+                    </div>
+                )}
+            </div>
+        </>
     );
 }
 

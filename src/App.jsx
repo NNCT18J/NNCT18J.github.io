@@ -21,8 +21,13 @@ const App = () => {
                     <Switch className="page">
                         {pages.map(page => 
                             <Route exact 
-                            path={page.path} 
-                            render={() => <page.Component data={page.data} />}>
+                                path={page.path} 
+                                render={() => 
+                                    <page.Component 
+                                        title={page.title} 
+                                        data={page.data} 
+                                    />
+                                }>
                             </Route>
                         )}
                         <Route render={() => <Http404 />} />

@@ -1,0 +1,21 @@
+.links {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0; }
+  .links .link {
+    display: grid;
+    grid-template-columns: 1fr [contents_] auto 1fr;
+    grid-template-rows: 1fr [contents_] auto 1fr; }
+    .links .link + .link {
+      margin-top: 20px; }
+    .links .link a {
+      grid-column: contents_;
+      grid-row: contents_;
+      font-size: 24px;
+      color: #444;
+      border-bottom: 2px solid #aaa;
+      text-decoration: none; }
+      .links .link a:hover {
+        border-bottom: 2px solid #444; }
+
+/*# sourceMappingURL=links.css.map */
