@@ -8,7 +8,7 @@ const Links = (props) => {
             <div className="links">
                 {props.data.map(link => 
                     <div className="link">
-                        <a href={link['uri']} target="_blank">{link['title']}</a>
+                        <a href={link['uri']} target="_blank" rel="noreferrer">{link['title']}</a>
                     </div>
                 )}
             </div>

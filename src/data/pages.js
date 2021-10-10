@@ -13,12 +13,26 @@ const pagesData = [
         title: 'Works',
         path: '/works',
         Component: Works,
+        // descriptionは表示したときに3行まで
         data: [
             {
                 title: '文化祭2021',
-                date: '2021/10/17',
-                links: []
-            }
+                date: {
+                    year: 2021,
+                    month: 10,
+                    date: 17,
+                    wDay: '日'
+                },
+                img: {
+                    src: 'test.jpg',
+                    alt: 'test',
+                },
+                description: '無事成功無事成功無事成功無事成功無事成功無事成功無事成功無事成功無事成功無事成功無事成功無事成功無事成功無事成功無事成功無事成功無事成功無事成功無事成功無事成功無事成功無事成功無事成功無事成功',
+                link: {
+                        title: 'GitHub',
+                        uri: 'https://github.com/nnct18j'
+                },
+            },
         ]
     },
     {
