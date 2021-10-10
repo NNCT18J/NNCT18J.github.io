@@ -1,7 +1,9 @@
 .links {
+    margin: 30px 0;
+
     display: flex;
     flex-direction: column;
-    margin: 30px 0;
+
     .link {
         display: grid;
         grid-template-columns: 1fr [contents_]auto 1fr;
@@ -14,9 +16,11 @@
         a {
             grid-column: contents_;
             grid-row: contents_;
-            font-size: 24px;
-            color: #444;
+
             border-bottom: 2px solid #aaa;
+            
+            color: #444;
+            font-size: 24px;
             text-decoration: none;
 
             &:hover {

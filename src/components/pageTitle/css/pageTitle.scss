@@ -1,20 +1,26 @@
 .title-container {
+    padding: 20px 0 20px;
+
     display: grid;
     grid-template-columns: 1fr [design_]auto 1fr;
-    padding: 20px 0 20px;
+
     .design {
         grid-column: design_;
-        display: grid;
-        grid-template-columns: 50px [contents_]auto 50px;
+
         border-bottom: solid 4px hsl(200, 40%, 40%);
 
+        display: grid;
+        grid-template-columns: 50px [contents_]auto 50px;
+
         .contents {
-            padding: 0 10px;
             grid-column: contents_;
+
+            padding: 0 10px;
+
             font-size: 36px;
-            text-shadow: 2px 2px #eee;
             font-style: italic;
             letter-spacing: 4px;
+            text-shadow: 2px 2px #eee;
         }
         
     }

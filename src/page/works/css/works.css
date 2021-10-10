@@ -6,58 +6,56 @@
   row-gap: 30px;
   align-items: center; }
   .works-container .item {
-    border-radius: 20px;
+    width: 500px;
     border: 2px solid black;
     background-color: #eee;
+    border-radius: 20px;
     box-shadow: 5px 5px #888;
-    width: 500px;
     display: grid;
     grid-template-rows: [img_] auto 10px [sentence_] 1fr; }
     .works-container .item img {
-      border-radius: 18px 18px 0 0;
-      margin: 0 auto;
       grid-row: img_;
       width: 100%;
       height: 200px;
+      margin: 0 auto;
+      border-radius: 18px 18px 0 0;
       object-fit: cover; }
     .works-container .item .sentence-container {
       grid-row: sentence_;
       margin: 20px 30px;
       display: grid;
-      grid-template-rows: 40px auto auto;
+      grid-template-rows: 40px 70px auto;
       grid-template-columns: 1fr auto;
       grid-template-areas: "title_ date_" "description_ description_" "link_ link_"; }
       .works-container .item .sentence-container .title {
-        line-height: 40px;
         grid-area: title_;
         text-align: start;
+        line-height: 40px;
         font-size: 20px;
         letter-spacing: 2px; }
       .works-container .item .sentence-container .date {
-        line-height: 40px;
         grid-area: date_;
-        font-size: 14px;
+        line-height: 40px;
+        text-align: center;
         color: #666;
-        text-align: center; }
+        font-size: 14px; }
       .works-container .item .sentence-container .description {
-        font-size: 16px;
-        height: 70px;
         grid-area: description_;
+        font-size: 16px;
         overflow-y: hidden; }
       .works-container .item .sentence-container .link {
+        grid-area: link_;
         margin-top: 10px;
         justify-self: end;
-        grid-area: link_;
         border-radius: 5px;
         display: grid;
         grid-template-columns: [contents_] auto 1fr; }
         .works-container .item .sentence-container .link a {
-          padding: 5px 10px;
-          background-color: #999c;
           grid-column: contents_;
-          grid-row: contents_;
-          font-size: 18px;
+          padding: 5px 10px;
           color: #eee;
+          background-color: #999c;
+          font-size: 18px;
           text-decoration: none; }
           .works-container .item .sentence-container .link a:hover {
             background-color: #9998; }

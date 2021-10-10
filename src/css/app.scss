@@ -3,8 +3,9 @@
 }
 
 .app {
-    min-height: 100vh;
     width: 100vw;
+    min-height: 100vh;
+
     display: grid;
     grid-template-rows: [header_]auto [page_]1fr [footer_]auto;
 
@@ -14,6 +15,7 @@
 
     main {
         grid-row: page_;
+        
         background-color: #ddd;
     }
 

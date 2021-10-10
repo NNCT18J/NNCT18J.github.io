@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
 header {
   height: 60px;
+  color: #eee;
   display: grid;
-  background-color: #29363d;
-  grid-template-columns: [title_] auto 1fr [nav_] auto;
-  color: #eee; }
+  background-color: #2d3f48;
+  grid-template-columns: [title_] auto 1fr [nav_] auto; }
   header .title {
     grid-column: title_;
     line-height: 60px;

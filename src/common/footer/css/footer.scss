@@ -1,10 +1,10 @@
-$height: 40px;
+$footer-height: 40px;
 
 footer {
-    height: $height;
+    height: $footer-height;
 
-    line-height: $height;
     text-align: center;
+    line-height: $footer-height;
 
     background-color: #777;
     color: #fff;
