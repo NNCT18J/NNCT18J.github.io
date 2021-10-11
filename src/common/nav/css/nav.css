@@ -10,7 +10,7 @@ header {
     line-height: 60px;
     padding-left: 75px;
     font-size: 20px;
-    font-style: normal;
+    font-style: italic;
     text-shadow: none;
     letter-spacing: 5px; }
   header nav {
@@ -24,18 +24,19 @@ nav {
   height: 25px;
   margin: 17.5px 80px 17.5px; }
   nav .item {
+    padding: 0 30px;
     text-align: center;
     line-height: 25px;
     text-decoration: none;
     color: #eee; }
     nav .item + .item {
-      margin-left: 40px; }
+      border-left: 1px solid #eee; }
     nav .item:hover {
       text-shadow: none;
       color: #eee; }
     nav .item::after {
       bottom: 0;
-      border-bottom: solid 1px #ddd;
+      border-bottom: solid 2px #eee;
       content: "";
       display: block;
       transition: all 0.3s ease;
