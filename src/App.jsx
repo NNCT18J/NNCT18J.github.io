@@ -18,6 +18,8 @@ const App = () => {
                     site={site} links={pages.map(page => {return {path: page.path, title: page.title}})} 
                     className="flex-initial"
                 />
+
+                {/* URIに対応するページを表示 */}
                 <Switch className="flex-1 bg-gray-200">
                     {pages.map(page => 
                         <Route exact 
@@ -30,8 +32,10 @@ const App = () => {
                             }>
                         </Route>
                     )}
+
                     <Route render={() => <NotFound />} />
                 </Switch>
+
                 <Footer site={site} className="flex-initial" />
             </Router>
         </div>

@@ -4,6 +4,7 @@ const Links = (props) => {
     return (
         <>
             <PageTitle title={props.title} />
+
             <div className="my-8 flex flex-col gap-y-5 items-center">
                 {props.data.map(link => 
                     <a href={link['uri']} target="_blank" rel="noreferrer"
