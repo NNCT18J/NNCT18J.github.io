@@ -1,5 +1,4 @@
 import Nav from "../nav/Nav"
-// import "./css/header.css"
 
 const Header = (props) => (
     <header className="h-16 bg-gray-700 text-gray-100 flex items-center">

@@ -1,4 +1,3 @@
-// import './css/pageTitle.css'
 import './pageTitle.css'
 
 const PageTitle = (props) => (

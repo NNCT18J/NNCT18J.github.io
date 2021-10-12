@@ -1,5 +1,4 @@
 import PageTitle from '../../components/pageTitle/PageTitle'
-// import './css/links.css'
 
 const Links = (props) => {
     return (
