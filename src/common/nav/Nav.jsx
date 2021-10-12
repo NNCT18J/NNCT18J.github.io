@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
 
-import './css/nav.css'
+// import './css/nav.css'
+import './nav.css'
 
 const Nav = (props) => (
-    <nav>
+    <nav className="flex justify-center items-center h-6 mr-3">
         {props.links.map(link => 
-            <Link to={link.path} className="item">{link.title}</Link>
+            <Link to={link.path} className="mx-7 text-center underline-move-anime">
+                {link.title}
+            </Link>
         )}
     </nav>
 );
