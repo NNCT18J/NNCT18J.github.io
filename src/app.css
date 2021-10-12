@@ -3,15 +3,20 @@
     min-height: 100vh;
 
     display: grid;
-    grid-template-rows: [header_]auto [page_]1fr [footer_]auto;
+    grid-template-rows: [header_]auto [hero_]auto [contents_]1fr [footer_]auto;
 }
 
 .app .header {
     grid-row: header_;
 }
 
-.app main {
-    grid-row: page_;
+.app .hero {
+    grid-row: hero_;
+}
+
+.app .contents-container {
+    grid-row: contents_;
+    @apply bg-white opacity-80;
 }
 
 .app .footer {

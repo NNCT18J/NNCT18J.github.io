@@ -1,9 +1,9 @@
 import siteData from './site';
-import pagesData from './pages';
+import contentsData from './contents';
 
 const data = {
     site: siteData,
-    pages: pagesData
+    contents: contentsData
 }
 
 export default data;

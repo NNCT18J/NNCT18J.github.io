@@ -1,47 +1,39 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import data from './data/init'
 
 import Header from "./common/header/Header";
 import Footer from "./common/footer/Footer";
-import NotFound from "./common/notFound/NotFound";
+import Hero from "./common/hero/Hero";
 
 import './app.css'
+import ContentsTiTle from "./components/contentsTitle/ContentsTitle";
 
 const App = () => {
     const [site] = useState(data.site)
-    const [pages] = useState(data.pages)
+    const [contents] = useState(data.contents)
 
     return (
         <div className="app">
-            <Router>
-                <Header
-                    site={site} links={pages.map(page => {return {path: page.path, title: page.title}})} 
-                    className="header"
-                />
+            <Header
+                site={site} links={contents.map(content => {return {path: content.path, title: content.title}})} 
+                className="header"
+            />
 
-                {/* URIに対応するページを表示 */}
-                <main className="bg-gray-300">
-                    <Switch>
-                        {pages.map(page => 
-                            <Route exact 
-                                path={page.path} 
-                                render={() => 
-                                    <page.Component 
-                                        title={page.title} 
-                                        data={page.data} 
-                                    />
-                                }>
-                            </Route>
-                        )}
+            <Hero subtitle={site.subtitle} hero={site.hero} />
+            <div className="my-10">
+                {contents.map(content => 
+                    <div className="my-20" id={content.path}>
+                        <ContentsTiTle title={content.title} />
+                        <content.Component 
+                            title={content.title} 
+                            data={content.data} 
+                        />
+                    </div>
+                )}
+            </div>
 
-                        <Route render={() => <NotFound />} />
-                    </Switch>
-                </main>
-
-                <Footer site={site} className="footer" />
-            </Router>
+            <Footer site={site} className="footer" />
         </div>
     );
 }

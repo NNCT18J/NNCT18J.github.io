@@ -1,9 +1,4 @@
-.underline-move-anime::after {
-    @apply bottom-0 border-b-2 border-gray-100 block w-0;
-    content: "";
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease;
-}
-.under-move-anime:hover::after {
-    @apply w-full
+.underline-hover:hover {
+    border-bottom: 1px solid white;
+    opacity: 0.85;
 }
