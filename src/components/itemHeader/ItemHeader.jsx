@@ -1,6 +1,6 @@
-import './pageTitle.css'
+import './itemHeader.css'
 
-const PageTitle = (props) => (
+const itemHeader = (props) => (
     <div className="title-container flex my-5 mx-auto">
         <div className="flex-1"></div>
 
@@ -15,4 +15,4 @@ const PageTitle = (props) => (
     </div>
 )
 
-export default PageTitle;
+export default itemHeader;
