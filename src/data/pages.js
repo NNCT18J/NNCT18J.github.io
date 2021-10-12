@@ -27,7 +27,7 @@ const pagesData = [
                     src: 'test.jpg',
                     alt: 'test',
                 },
-             // descriptionは表示したときに3行まで
+             // descriptionは表示したときに4行まで
                 description: 'テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト',
                 link: {
                         title: 'GitHub',
@@ -46,7 +46,7 @@ const pagesData = [
                     src: 'test.jpg',
                     alt: 'test',
                 },
-             // descriptionは表示したときに3行まで
+             // descriptionは表示したときに4行まで
                 description: '',
                 link: {
                         title: 'GitHub',
@@ -65,7 +65,7 @@ const pagesData = [
                     src: 'test.jpg',
                     alt: 'test',
                 },
-             // descriptionは表示したときに3行まで
+             // descriptionは表示したときに4行まで
                 description: '',
                 link: {
                         title: 'GitHub',
@@ -84,7 +84,7 @@ const pagesData = [
                     src: 'test.jpg',
                     alt: 'test',
                 },
-             // descriptionは表示したときに3行まで
+             // descriptionは表示したときに4行まで
                 description: '',
                 link: {
                         title: 'GitHub',
