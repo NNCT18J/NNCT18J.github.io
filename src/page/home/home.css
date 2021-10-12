@@ -1,4 +1,6 @@
 .strong {
-    color: hsl(200, 60%, 60%);
-    @apply text-5xl
+    @apply text-5xl;
+    color: hsl(210, 50%, 50%);
+    text-shadow: 2px 2px hsl(210, 70%, 70%);
+    margin: 0 2px;
 }
