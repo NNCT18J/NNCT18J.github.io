@@ -12,8 +12,6 @@
 
 .app main {
     grid-row: page_;
-    
-    background-color: #ddd;
 }
 
 .app .footer {

@@ -22,8 +22,8 @@ const App = () => {
                 />
 
                 {/* URIに対応するページを表示 */}
-                <main>
-                    <Switch className="bg-gray-200">
+                <main className="bg-gray-300">
+                    <Switch>
                         {pages.map(page => 
                             <Route exact 
                                 path={page.path} 
