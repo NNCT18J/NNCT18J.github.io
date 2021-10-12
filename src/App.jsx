@@ -7,20 +7,22 @@ import Header from "./common/header/Header";
 import Footer from "./common/footer/Footer";
 import NotFound from "./common/notFound/NotFound";
 
+import './app.css'
+
 const App = () => {
     const [site] = useState(data.site)
     const [pages] = useState(data.pages)
 
     return (
-        <div className="flex flex-col w-screen min-h-screen">
+        <div className="app">
             <Router>
                 <Header
                     site={site} links={pages.map(page => {return {path: page.path, title: page.title}})} 
-                    className="flex-initial"
+                    className="header"
                 />
 
                 {/* URIに対応するページを表示 */}
-                <Switch className="flex-1 bg-gray-200">
+                <Switch className="main bg-gray-200">
                     {pages.map(page => 
                         <Route exact 
                             path={page.path} 
@@ -36,7 +38,7 @@ const App = () => {
                     <Route render={() => <NotFound />} />
                 </Switch>
 
-                <Footer site={site} className="flex-initial" />
+                <Footer site={site} className="footer" />
             </Router>
         </div>
     );
