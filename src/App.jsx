@@ -22,21 +22,23 @@ const App = () => {
                 />
 
                 {/* URIに対応するページを表示 */}
-                <Switch className="main bg-gray-200">
-                    {pages.map(page => 
-                        <Route exact 
-                            path={page.path} 
-                            render={() => 
-                                <page.Component 
-                                    title={page.title} 
-                                    data={page.data} 
-                                />
-                            }>
-                        </Route>
-                    )}
+                <main>
+                    <Switch className="bg-gray-200">
+                        {pages.map(page => 
+                            <Route exact 
+                                path={page.path} 
+                                render={() => 
+                                    <page.Component 
+                                        title={page.title} 
+                                        data={page.data} 
+                                    />
+                                }>
+                            </Route>
+                        )}
 
-                    <Route render={() => <NotFound />} />
-                </Switch>
+                        <Route render={() => <NotFound />} />
+                    </Switch>
+                </main>
 
                 <Footer site={site} className="footer" />
             </Router>
