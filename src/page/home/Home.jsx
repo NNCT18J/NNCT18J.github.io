@@ -1,8 +1,8 @@
-import './css/home.css'
+import './home.css'
 
 const Home = () => {
     return (
-        <div className="home">
+        <div className="h-full text-center text-2xl">
             <span className="strong">N</span>agano　
             <span className="strong">N</span>ational　
             <span className="strong">C</span>ollege　of　

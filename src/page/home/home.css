@@ -1,0 +1,4 @@
+.strong {
+    color: hsl(200, 60%, 60%);
+    @apply text-5xl
+}
