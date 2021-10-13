@@ -1,0 +1,15 @@
+.work-container {
+    width: 250px;
+}
+.work-container img {
+    height: 150px;
+}
+
+@media screen and (min-width: 768px) {
+    .work-container {
+        width: 400px;
+    }
+    .work-container img {
+        height: 200px;
+    }
+}
