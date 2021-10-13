@@ -23,9 +23,13 @@
     @apply text-3xl md:text-4xl lg:text-5xl;
 }
 
+.subtitle .str-objs {
+    @apply block lg:inline-block
+}
+
 .subtitle .strong {
     @apply text-5xl sm:text-6xl lg:text-7xl;
     @apply text-white;
     text-shadow: 5px 5px black;
-    margin: 0 2px;
+    margin: 0 1px;
 }

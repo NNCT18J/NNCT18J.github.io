@@ -7,7 +7,7 @@ const Nav = (props) => (
     <nav className="flex justify-center items-center h-6 mr-3">
         {props.links.map(link => 
             <AnchorLink href={`#${link.path}`} 
-                className="underline-hover mx-7 text-center hover">
+                className="underline-hover mx-2 md:mx-7 text-center hover">
                 {link.title}
             </AnchorLink>
         )}
