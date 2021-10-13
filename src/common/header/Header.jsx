@@ -7,7 +7,7 @@ const Header = (props) => (
         {/* ページタイトル */}
         <div className="flex-initial text-2xl tracking-widest">{props.site.name}</div>
         {/* 中央の余白 */}
-        <div className="w-28"></div>
+        <div className="w-5 md:w-28"></div>
         {/* ナビゲーションメニュー */}
         <Nav links={props.links} className="flex-initial" />
         {/* 右側の余白 */}

@@ -4,8 +4,7 @@
 
 https://nnct18j.com
 
-## サイトマップ
+## コンテンツ
 
-- Home：トップページ
 - Works：NNCT18Jでの作品を載せます
 - Links：関連リンクを載せます
