@@ -1,0 +1,31 @@
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+.hero img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #666;
+    opacity: 0.6;
+    object-fit: cover;
+}
+.subtitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: 48px;
+    @apply text-3xl md:text-4xl lg:text-5xl;
+}
+
+.subtitle .strong {
+    @apply text-5xl sm:text-6xl lg:text-7xl;
+    @apply text-white;
+    text-shadow: 5px 5px black;
+    margin: 0 2px;
+}
