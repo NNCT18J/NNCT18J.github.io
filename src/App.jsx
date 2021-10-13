@@ -21,7 +21,7 @@ const App = () => {
             />
 
             <Hero subtitle={site.subtitle} hero={site.hero} />
-            <div className="my-10">
+            <div className="my-4 md:my-8">
                 {contents.map(content => 
                     <div className="my-20" id={content.path}>
                         <ContentsTiTle title={content.title} />
